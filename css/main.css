@@ -15,10 +15,16 @@
 
 .headername__title {
   font-size: 3rem;
+  color: #7EBDC2;
 }
 
 .headername__title-sub {
+  color: #25858C;
   font-size: 2.5rem;
+}
+
+.link {
+  margin-top: 50px;
 }
 
 .liner {
@@ -37,6 +43,42 @@
   padding-top: 60%;
   background-color: gray;
   margin: 7.5% 0;
+}
+
+.work__tile-title {
+  display: inline-block;
+}
+
+.work__tile-title_right {
+  float: right;
+}
+
+.work__catalog p {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.work__tile-img {
+  position: relative;
+}
+
+.work__tile-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-work {
+  background-color: coral;
+}
+
+.btn-project {
+  background-color: #D384CA;
 }
 
 .para {
