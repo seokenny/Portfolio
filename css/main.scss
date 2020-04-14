@@ -3,12 +3,12 @@
 *, h1, h2, h3, h4, h5, h6, p, ul, li {
     padding: unset;
     margin: unset;
+    font-family: "Nunito";
 }
 
 #container {
     width: 85%;
     margin-left: 7.5%;
-    font-family: "Nunito";
 }
 
 .headername {
@@ -27,7 +27,7 @@
     margin-top: 50px;
     text-decoration: none;
     font-weight: bold;
-    display: block;
+    display: inline-block;
 }
 
 .liner {
@@ -35,6 +35,14 @@
     height: 1px;
     background-color: gray;
     margin: 15% 0;
+}
+
+.website {
+    margin-right: 15px;
+}
+
+.code {
+    margin-left: 15px;
 }
 
 .work {
@@ -91,6 +99,9 @@
 
 /*****CONTACT*****/
 .contact {
+    border-radius: 5px;
+    padding: 30px;
+    margin-bottom: 100px;
     &__header {
         &-main {
 
@@ -101,14 +112,43 @@
     }
 }
 
+footer {
+    width: 85%;
+    margin-left: 7.5%;
+}
+
 form {
     font-size: 2.5rem;
 }
 
 .form__inputs {
     display: block;
+    width: 100%;
+    border: 3px solid lightblue;
+    border-radius: 5px;
+    margin: 50px 0;
+    box-sizing: border-box;
+    height: 100px;
+    &[type="text"] {
+        padding: 30px;
+    }
+}
+
+textarea {
+    height: unset !important;
+    padding: 30px;
 }
 
 .submitbutton {
-
+    margin-bottom: unset;
+    cursor: pointer;
+    background: #7EBDC2;
+    color: white;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+    border: 3px solid #7EBDC2;
+    &:hover {
+        background: #25858C;
+        border: 3px solid #25858C;
+    }
 }
