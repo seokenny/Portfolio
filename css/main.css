@@ -9,6 +9,14 @@
   margin-left: 7.5%;
 }
 
+.main-header {
+  margin-top: 200px;
+}
+
+.header-margin {
+  margin: 5px 0 40px 0;
+}
+
 .headername {
   font-size: 5rem;
 }
@@ -99,7 +107,6 @@
 /*****CONTACT*****/
 .contact {
   border-radius: 5px;
-  padding: 30px;
   margin-bottom: 100px;
 }
 
