@@ -171,7 +171,6 @@ textarea {
 
 .worklist__catalog-choice {
   display: inline-block;
-  background-color: coral;
   padding: 7.5px 12.5px;
   border-radius: 5px;
   cursor: pointer;
@@ -195,8 +194,28 @@ textarea {
   margin: 0 5px;
 }
 
+.worklist__active {
+  color: white;
+}
+
+.worklist__active.wcc__work {
+  background: coral;
+}
+
+.worklist__active.wcc__project {
+  background: #D384CA;
+}
+
+.worklist__active.wcc__all {
+  background: #7EBDC2;
+}
+
 .wcc__work {
   margin: 0 10px;
+}
+
+.inactive {
+  display: none;
 }
 
 .worklist .active .worklist__liner {

@@ -176,7 +176,6 @@ textarea {
     &__catalog {
         &-choice {
             display: inline-block;
-            background-color: coral;
             padding: 7.5px 12.5px;
             border-radius: 5px;
             cursor: pointer;
@@ -197,10 +196,26 @@ textarea {
         vertical-align: super;
         margin: 0 5px;
     }
+    &__active {
+        color: white;
+    }
+    &__active.wcc__work {
+        background: coral;
+    }
+    &__active.wcc__project {
+        background: #D384CA;
+    }
+    &__active.wcc__all {
+        background: #7EBDC2;
+    }
 }
 
 .wcc__work {
     margin: 0 10px;
+}
+
+.inactive {
+    display: none;
 }
 
 .worklist .active .worklist__liner {
