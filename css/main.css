@@ -108,10 +108,26 @@
 .social__list-button {
   cursor: pointer;
   display: inline-block;
-  height: 30px;
-  width: 30px;
-  background-color: blue;
+}
+
+.social__list-button-img {
+  height: 25px;
+  width: 25px;
   border-radius: 100%;
+}
+
+.social__list-button * {
+  display: inline-block;
+}
+
+.social__list-button a {
+  text-decoration: none;
+  color: black;
+}
+
+.social__list-button p {
+  vertical-align: super;
+  font-size: 13px;
 }
 
 .slb__center {
@@ -169,6 +185,22 @@ textarea {
   margin-top: 35px;
 }
 
+.worklist__work:hover {
+  color: coral;
+}
+
+.worklist__work:hover .worklist__liner {
+  background: coral;
+}
+
+.worklist__project:hover {
+  color: #D384CA;
+}
+
+.worklist__project:hover .worklist__liner {
+  background: #D384CA;
+}
+
 .worklist__catalog-choice {
   display: inline-block;
   padding: 7.5px 12.5px;
@@ -176,14 +208,26 @@ textarea {
   cursor: pointer;
   margin-bottom: 15px;
   font-weight: bold;
+  border: 1px solid white;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .worklist__item {
   margin: 15px 0;
+  display: table;
 }
 
 .worklist__item div {
   display: inline-block;
+}
+
+.worklist__item:hover .worklist__liner {
+  width: 60px;
+}
+
+.worklist__item div {
+  cursor: pointer;
 }
 
 .worklist__liner {
@@ -192,26 +236,46 @@ textarea {
   background: black;
   vertical-align: super;
   margin: 0 5px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .worklist__active {
-  color: white;
+  color: white !important;
 }
 
 .worklist__active.wcc__work {
   background: coral;
+  border: 1px solid white !important;
 }
 
 .worklist__active.wcc__project {
   background: #D384CA;
+  border: 1px solid white !important;
 }
 
 .worklist__active.wcc__all {
   background: #7EBDC2;
+  border: 1px solid white !important;
+}
+
+.wcc__all:hover {
+  color: #7EBDC2;
+  border: 1px solid #ddd;
 }
 
 .wcc__work {
   margin: 0 10px;
+}
+
+.wcc__work:hover {
+  color: coral;
+  border: 1px solid #ddd;
+}
+
+.wcc__project:hover {
+  color: #D384CA;
+  border: 1px solid #ddd;
 }
 
 .inactive {
@@ -219,7 +283,23 @@ textarea {
 }
 
 .worklist .active .worklist__liner {
-  width: 100px;
+  width: 125px;
+}
+
+.worklist .worklist__work.active {
+  color: coral;
+}
+
+.worklist .worklist__work.active .worklist__liner {
+  background-color: coral;
+}
+
+.worklist .worklist__project.active {
+  color: #D384CA;
+}
+
+.worklist .worklist__project.active .worklist__liner {
+  background-color: #D384CA;
 }
 
 @media only screen and (min-width: 992px) {

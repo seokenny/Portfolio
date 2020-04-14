@@ -108,10 +108,22 @@
         &-button {
             cursor: pointer;
             display: inline-block;
-            height: 30px;
-            width: 30px;
-            background-color: blue;
-            border-radius: 100%;
+            &-img {
+                height: 25px;
+                width: 25px;
+                border-radius: 100%;
+            }
+            & * {
+                display: inline-block;
+            }
+            & a {
+                text-decoration: none;
+                color: black;
+            }
+            & p {
+                vertical-align: super;
+                font-size: 13px;
+            }
         }
     }
 }
@@ -173,6 +185,18 @@ textarea {
 .worklist {
     font-size: 13px;
     margin-top: 35px;
+    &__work:hover {
+        color: coral;
+        & .worklist__liner {
+            background: coral;
+        }
+    }
+    &__project:hover {
+        color: #D384CA;
+        & .worklist__liner {
+            background: #D384CA;
+        }
+    }
     &__catalog {
         &-choice {
             display: inline-block;
@@ -181,12 +205,21 @@ textarea {
             cursor: pointer;
             margin-bottom: 15px;
             font-weight: bold;
+            border: 1px solid white;
+            transition: all .2s ease-in-out;
         }
     }
     &__item {
         margin: 15px 0;
+        display: table;
         & div {
             display: inline-block;
+        }
+        &:hover .worklist__liner {
+            width: 60px;
+        }
+        & div {
+            cursor: pointer;
         }
     }
     &__liner {
@@ -195,23 +228,41 @@ textarea {
         background: black;
         vertical-align: super;
         margin: 0 5px;
+        transition: all .2s ease-in-out;
     }
     &__active {
-        color: white;
+        color: white !important;
     }
     &__active.wcc__work {
         background: coral;
+        border: 1px solid white !important;
     }
     &__active.wcc__project {
         background: #D384CA;
+        border: 1px solid white !important;
     }
     &__active.wcc__all {
         background: #7EBDC2;
+        border: 1px solid white !important;
     }
+}
+
+.wcc__all:hover {
+    color: #7EBDC2;
+    border: 1px solid #ddd;
 }
 
 .wcc__work {
     margin: 0 10px;
+    &:hover {
+        color: coral;
+        border: 1px solid #ddd;
+    }
+}
+
+.wcc__project:hover {
+    color: #D384CA;
+    border: 1px solid #ddd;
 }
 
 .inactive {
@@ -219,7 +270,23 @@ textarea {
 }
 
 .worklist .active .worklist__liner {
-    width: 100px;
+    width: 125px;
+}
+
+.worklist .worklist__work.active {
+    color: coral;
+}
+
+.worklist .worklist__work.active .worklist__liner {
+    background-color: coral;
+}
+
+.worklist .worklist__project.active {
+    color: #D384CA;
+}
+
+.worklist .worklist__project.active .worklist__liner {
+    background-color: #D384CA;
 }
 
 @media only screen and (min-width:992px) {
