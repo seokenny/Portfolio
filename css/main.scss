@@ -11,28 +11,24 @@
     margin-left: 7.5%;
 }
 
-.main-header {
-    margin-top: 200px;
-}
-
 .header-margin {
-    margin: 5px 0 40px 0;
+    margin: 5px 0 25px 0;
 }
 
 .headername {
-    font-size: 5rem;
+    font-size: 50px;
     &__title {
-        font-size: 3rem;
+        font-size: 25px;
         color: #7EBDC2;
         &-sub {
             color: #25858C;
-            font-size: 2.5rem;
+            font-size: 20px;
         }
     }
 }
 
 .link {
-    margin-top: 50px;
+    margin-top: 45px;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
@@ -60,7 +56,7 @@
             width: 100%;
             padding-top: 60%;
             background-color: gray;
-            margin: 7.5% 0;
+            margin: 20px 0;
         }
         &-title {
             display: inline-block;
@@ -73,7 +69,7 @@
         & p {
             color: white;
             font-weight: bold;
-            font-size: 1.5rem;
+            font-size: 15px;
             padding: 10px 20px;
             border-radius: 10px;
         }
@@ -102,7 +98,26 @@
 }
 
 .para {
-    font-size: 2.5rem;
+    font-size: 13px;
+    line-height: 23px;
+}
+
+.social {
+    margin-top: 50px;
+    &__list {
+        &-button {
+            cursor: pointer;
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            background-color: blue;
+            border-radius: 100%;
+        }
+    }
+}
+
+.slb__center {
+    margin: 0 10px;
 }
 
 /*****CONTACT*****/
@@ -117,11 +132,6 @@
 
         }
     }
-}
-
-footer {
-    width: 85%;
-    margin-left: 7.5%;
 }
 
 form {
@@ -157,5 +167,67 @@ textarea {
     &:hover {
         background: #25858C;
         border: 3px solid #25858C;
+    }
+}
+
+.worklist {
+    font-size: 13px;
+    margin-top: 35px;
+    &__catalog {
+        &-choice {
+            display: inline-block;
+            background-color: coral;
+            padding: 7.5px 12.5px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+    }
+    &__item {
+        margin: 15px 0;
+        & div {
+            display: inline-block;
+        }
+    }
+    &__liner {
+        width: 50px;
+        height: 1px;
+        background: black;
+        vertical-align: super;
+        margin: 0 5px;
+    }
+}
+
+.wcc__work {
+    margin: 0 10px;
+}
+
+.worklist .active .worklist__liner {
+    width: 100px;
+}
+
+@media only screen and (min-width:992px) {
+    #container {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 75px;
+    }
+    .leftcontain {
+        width: 33%;
+        float: left;
+        position: fixed;
+    }
+    .main-header {
+    }
+    .rightcontain {
+        width: 50%;
+        margin-left: 50%;
+    }
+    .liner {
+        width: 0;
+        height: 0;
+        background-color: gray;
+        margin: 0;
     }
 }
