@@ -29,10 +29,11 @@
 }
 
 .link {
-    margin-top: 45px;
+    margin-top: 35px;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
+    font-size: 16px;
 }
 
 .liner {
@@ -50,12 +51,17 @@
     margin-left: 15px;
 }
 
+.work__image {
+    width: 100%;
+    margin: 20px 0;
+}
+
 .work {
     &__tile {
         margin-bottom: 25%;
         &-img {
             width: 100%;
-            padding-top: 60%;
+            height: auto;
             background-color: gray;
             margin: 20px 0;
         }
