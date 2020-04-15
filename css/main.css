@@ -352,6 +352,10 @@ textarea {
   #container {
     width: 1200px;
     margin: auto;
+    margin-top: 75px;
+  }
+  .leftcontain {
+    width: 25%;
   }
 }
 /*# sourceMappingURL=main.css.map */
