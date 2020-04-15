@@ -4,6 +4,14 @@ $(".wcc__all").on("click",function(){
     $(".wcc__all").addClass("worklist__active");
     $(".wt__project").removeClass("inactive");
     $(".wt__work").removeClass("inactive");
+    $(".worklist__work").removeClass("inactive");
+    $(".worklist__project").removeClass("inactive");
+    for(var i = 0; i < 7; i++){
+        if(document.querySelector(".worklist__" + i) != document.querySelector(".worklist__1")){
+            $(".worklist__" + i).removeClass("active");
+        }
+    }
+    $(".worklist__1").addClass("active");
     window.scrollTo(0, 0);
 });
 
@@ -13,6 +21,14 @@ $(".wcc__work").on("click",function(){
     $(".wcc__work").addClass("worklist__active");
     $(".wt__work").removeClass("inactive");
     $(".wt__project").addClass("inactive");
+    $(".worklist__project").addClass("inactive");
+    $(".worklist__work").removeClass("inactive");
+    for(var i = 0; i < 7; i++){
+        if(document.querySelector(".worklist__" + i) != document.querySelector(".worklist__1")){
+            $(".worklist__" + i).removeClass("active");
+        }
+    }
+    $(".worklist__1").addClass("active");
     window.scrollTo(0, 0);
 });
 
@@ -22,6 +38,14 @@ $(".wcc__project").on("click",function(){
     $(".wcc__project").addClass("worklist__active");
     $(".wt__work").addClass("inactive");
     $(".wt__project").removeClass("inactive");
+    $(".worklist__project").removeClass("inactive");
+    $(".worklist__work").addClass("inactive");
+    for(var i = 0; i < 7; i++){
+        if(document.querySelector(".worklist__" + i) != document.querySelector(".worklist__3")){
+            $(".worklist__" + i).removeClass("active");
+        }
+    }
+    $(".worklist__3").addClass("active");
     window.scrollTo(0, 0);
 });
 

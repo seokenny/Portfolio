@@ -236,8 +236,8 @@ textarea {
   background: black;
   vertical-align: super;
   margin: 0 5px;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: width .2s ease-in-out;
+  transition: width .2s ease-in-out;
 }
 
 .worklist__active {
