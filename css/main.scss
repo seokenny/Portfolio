@@ -45,19 +45,32 @@
 
 .website {
     margin-right: 15px;
+}
 
 .code {
     margin-left: 15px;
 }
 
 .work__image {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transition: all .3s ease-in-out;
+    transform: scale(1.025);
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.work__image-box {
     margin: 20px 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 .work {
     &__tile {
-        margin-bottom: 25%;
+        margin-bottom: 20%;
         &-img {
             width: 100%;
             height: auto;

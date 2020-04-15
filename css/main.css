@@ -52,12 +52,28 @@
 }
 
 .work__image {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+  cursor: pointer;
+}
+
+.work__image:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.work__image-box {
   margin: 20px 0;
+  width: 100%;
+  overflow: hidden;
 }
 
 .work__tile {
-  margin-bottom: 25%;
+  margin-bottom: 20%;
 }
 
 .work__tile-img {
