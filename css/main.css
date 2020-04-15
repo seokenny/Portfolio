@@ -15,6 +15,7 @@
 
 .headername {
   font-size: 50px;
+  margin-top: 50px;
 }
 
 .headername__title {
@@ -141,27 +142,41 @@
 }
 
 form {
-  font-size: 2.5rem;
+  font-size: 15px;
 }
 
 .form__inputs {
   display: block;
   width: 100%;
-  border: 3px solid lightblue;
+  border: 2px solid lightblue;
   border-radius: 5px;
-  margin: 50px 0;
+  margin: 20px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 100px;
 }
 
 .form__inputs[type="text"] {
-  padding: 30px;
+  padding: 10px;
+}
+
+.form__inputs:hover {
+  border: 2px solid #25858C;
+}
+
+.form__inputs:focus {
+  border: 2px solid #25858C;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
 }
 
 textarea {
   height: unset !important;
-  padding: 30px;
+  padding: 10px;
 }
 
 .submitbutton {
@@ -170,9 +185,10 @@ textarea {
   background: #7EBDC2;
   color: white;
   font-weight: bold;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  border: 3px solid #7EBDC2;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  border: 2px solid #7EBDC2;
+  padding: 10px;
 }
 
 .submitbutton:hover {
@@ -181,6 +197,7 @@ textarea {
 }
 
 .worklist {
+  display: none;
   font-size: 13px;
   margin-top: 35px;
 }
@@ -312,6 +329,12 @@ textarea {
     width: 33%;
     float: left;
     position: fixed;
+  }
+  .headername {
+    margin-top: unset;
+  }
+  .worklist {
+    display: block;
   }
   .rightcontain {
     width: 50%;
