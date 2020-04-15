@@ -347,4 +347,11 @@ textarea {
     margin: 0;
   }
 }
+
+@media only screen and (min-width: 1350px) {
+  #container {
+    width: 1200px;
+    margin: auto;
+  }
+}
 /*# sourceMappingURL=main.css.map */
