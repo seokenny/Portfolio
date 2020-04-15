@@ -13,18 +13,23 @@
   margin: 5px 0 25px 0;
 }
 
+.leftcontain .headername__title {
+  color: #7EBDC2;
+}
+
 .headername {
   font-size: 50px;
   margin-top: 50px;
+  color: #25858C;
 }
 
 .headername__title {
   font-size: 25px;
-  color: #7EBDC2;
+  color: #25858C;
 }
 
 .headername__title-sub {
-  color: #25858C;
+  color: #7EBDC2;
   font-size: 20px;
 }
 
@@ -34,6 +39,7 @@
   font-weight: bold;
   display: inline-block;
   font-size: 16px;
+  color: #25858C;
 }
 
 .liner {
@@ -95,8 +101,8 @@
   color: white;
   font-weight: bold;
   font-size: 15px;
-  padding: 10px 20px;
-  border-radius: 10px;
+  padding: 7.5px 10px;
+  border-radius: 5px;
 }
 
 .work__tile-img {
