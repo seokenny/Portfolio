@@ -6,6 +6,10 @@
     font-family: "Nunito";
 }
 
+body {
+    overflow: hidden;
+}
+
 #container {
     width: 85%;
     margin-left: 7.5%;
@@ -400,7 +404,7 @@ textarea {
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    background-color: #7EBDC2;
+    background-color: white;
     z-index: 20000;
     position: fixed;
     top: 0;
@@ -410,6 +414,9 @@ textarea {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: white;
+        color: #25858C;
+    }
+    & p {
+        text-align: center;
     }
 }

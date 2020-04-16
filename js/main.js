@@ -243,5 +243,8 @@ function worklistScrollContact() {
 }
 
 $(window).on("load",function(){
+    $("body").css({
+        overflow: "unset"
+    });
     $(".loader").fadeOut("slow");
 });
