@@ -40,6 +40,17 @@
   display: inline-block;
   font-size: 16px;
   color: #25858C;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  padding: 7.5px 12.5px;
+}
+
+.link:hover {
+  color: white;
+  background: #25858C;
+  border: 1px solid #25858C;
 }
 
 .liner {
@@ -49,12 +60,8 @@
   margin: 15% 0;
 }
 
-.website {
-  margin-right: 15px;
-}
-
 .code {
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .work__image {
@@ -137,12 +144,15 @@
 .social__list-button {
   cursor: pointer;
   display: inline-block;
+  border-bottom: 1px solid white;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .social__list-button-img {
-  height: 25px;
-  width: 25px;
-  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
 }
 
 .social__list-button * {
@@ -159,14 +169,36 @@
   font-size: 13px;
 }
 
+.social__list-button:hover {
+  border-bottom: 1px solid black;
+  padding-bottom: 2px;
+}
+
 .slb__center {
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 /*****CONTACT*****/
 .contact {
   border-radius: 5px;
   margin-bottom: 100px;
+}
+
+.contact__button {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 7.5px 15px;
+  background-color: #7EBDC2;
+  display: inline-block;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.contact__button:hover {
+  background-color: #25858C;
 }
 
 form {

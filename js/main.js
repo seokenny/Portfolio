@@ -222,8 +222,20 @@ function worklistActive7() {
     }
 }
 
+$(".contact__button").on("click",function(){
+    worklistScrollContact();
+});
+
 function worklistScroll7() {
     var goTo = $(".wt__oldportfolio .work__tile-title");
+        var top = goTo.offset().top;
+        top-=75;
+        $('html,body').animate({scrollTop: top}, 'slow');
+        return false;
+}
+
+function worklistScrollContact() {
+    var goTo = $(".contact");
         var top = goTo.offset().top;
         top-=75;
         $('html,body').animate({scrollTop: top}, 'slow');
