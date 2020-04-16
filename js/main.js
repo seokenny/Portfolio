@@ -241,3 +241,7 @@ function worklistScrollContact() {
         $('html,body').animate({scrollTop: top}, 'slow');
         return false;
 }
+
+$(window).on("load",function(){
+    $(".loader").fadeOut("slow");
+});
