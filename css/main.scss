@@ -1,4 +1,5 @@
 @import 'variables.scss';
+@import 'mixins.scss';
 
 *, h1, h2, h3, h4, h5, h6, p, ul, li {
     padding: unset;
@@ -20,18 +21,18 @@ body {
 }
 
 .leftcontain .headername__title {
-    color: #7EBDC2;
+    color: $main-light;
 }
 
 .headername {
     font-size: 50px;
     margin-top: 50px;
-    color: #25858C;
+    color: $main-dark;
     &__title {
         font-size: 25px;
-        color: #25858C;
+        color: $main-dark;
         &-sub {
-            color: #7EBDC2;
+            color: $main-light;
             font-size: 20px;
         }
     }
@@ -43,15 +44,15 @@ body {
     font-weight: bold;
     display: inline-block;
     font-size: 16px;
-    color: #25858C;
+    color: $main-dark;
     border: 1px solid #ddd;
     border-radius: 5px;
     transition: all .2s ease-in-out;
     padding: 7.5px 12.5px;
     &:hover {
         color: white;
-        background: #25858C;
-        border: 1px solid #25858C;
+        background: $main-dark;
+        border: 1px solid $main-dark;
     }
 }
 
@@ -124,10 +125,10 @@ body {
 
 .btn {
     &-work {
-        background-color: coral;
+        background-color: $sec-coral;
     }
     &-project {
-        background-color: #D384CA;
+        background-color: $sec-pink;
     }
 }
 
@@ -176,26 +177,18 @@ body {
 .contact {
     border-radius: 5px;
     margin-bottom: 100px;
-    &__header {
-        &-main {
-
-        }
-        &-descript {
-
-        }
-    }
     &__button {
         cursor: pointer;
         font-weight: bold;
             padding: 7.5px 15px;
-            background-color: #7EBDC2;
+            background-color: $main-light;
             display: inline-block;
             border-radius: 5px;
             color: white;
             text-decoration: none;
             transition: all .2s ease-in-out;
             &:hover {
-                background-color: #25858C;
+                background-color: $main-dark;
         }
     }
 }
@@ -215,10 +208,10 @@ form {
         padding: 10px;
     }
     &:hover {
-        border: 2px solid #25858C;
+        border: 2px solid $main-dark;
     }
     &:focus {
-        border: 2px solid #25858C;
+        border: 2px solid $main-dark;
     }
 }
 
@@ -237,15 +230,15 @@ textarea {
 .submitbutton {
     margin-bottom: unset;
     cursor: pointer;
-    background: #7EBDC2;
+    background: $main-light;
     color: white;
     font-weight: bold;
     transition: all .2s ease-in-out;
-    border: 2px solid #7EBDC2;
+    border: 2px solid $main-light;
     padding: 10px;
     &:hover {
-        background: #25858C;
-        border: 3px solid #25858C;
+        background: $main-dark;
+        border: 3px solid $main-dark;
     }
 }
 
@@ -254,15 +247,15 @@ textarea {
     font-size: 13px;
     margin-top: 35px;
     &__work:hover {
-        color: coral;
+        color: $sec-coral;
         & .worklist__liner {
-            background: coral;
+            background: $sec-coral;
         }
     }
     &__project:hover {
-        color: #D384CA;
+        color: $sec-pink;
         & .worklist__liner {
-            background: #D384CA;
+            background: $sec-pink;
         }
     }
     &__catalog {
@@ -302,34 +295,34 @@ textarea {
         color: white !important;
     }
     &__active.wcc__work {
-        background: coral;
+        background: $sec-coral;
         border: 1px solid white !important;
     }
     &__active.wcc__project {
-        background: #D384CA;
+        background: $sec-pink;
         border: 1px solid white !important;
     }
     &__active.wcc__all {
-        background: #7EBDC2;
+        background: $main-light;
         border: 1px solid white !important;
     }
 }
 
 .wcc__all:hover {
-    color: #7EBDC2;
+    color: $main-light;
     border: 1px solid #ddd;
 }
 
 .wcc__work {
     margin: 0 10px;
     &:hover {
-        color: coral;
+        color: $sec-coral;
         border: 1px solid #ddd;
     }
 }
 
 .wcc__project:hover {
-    color: #D384CA;
+    color: $sec-pink;
     border: 1px solid #ddd;
 }
 
@@ -342,19 +335,19 @@ textarea {
 }
 
 .worklist .worklist__work.active {
-    color: coral;
+    color: $sec-coral;
 }
 
 .worklist .worklist__work.active .worklist__liner {
-    background-color: coral;
+    background-color: $sec-coral;
 }
 
 .worklist .worklist__project.active {
-    color: #D384CA;
+    color: $sec-pink;
 }
 
 .worklist .worklist__project.active .worklist__liner {
-    background-color: #D384CA;
+    background-color: $sec-pink;
 }
 
 @media only screen and (min-width:992px) {
@@ -373,8 +366,6 @@ textarea {
     }
     .worklist {
         display: block;
-    }
-    .main-header {
     }
     .rightcontain {
         width: 50%;
@@ -410,11 +401,8 @@ textarea {
     top: 0;
     left: 0;
     &__text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #25858C;
+        @include centerBoth;
+        color: $main-dark;
     }
     & p {
         text-align: center;
